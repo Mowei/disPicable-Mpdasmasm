@@ -9,6 +9,7 @@
 #define ArgumentParser_hpp
 
 #include <iostream>
+#include <cstring>
 #include <stdint.h>
 #include <vector>
 #include <string>
