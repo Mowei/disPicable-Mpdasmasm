@@ -7,6 +7,7 @@ add_executable(
 )
 
 #source files
+target_sources(${PROJECT_NAME} PRIVATE DisassemblerRamTracker.cpp )
 target_sources(${PROJECT_NAME} PRIVATE ArgumentParser.cpp )
 target_sources(${PROJECT_NAME} PRIVATE AssembleDirectives.cpp)
 target_sources(${PROJECT_NAME} PRIVATE DisassemblerTableReads.cpp)
@@ -35,3 +36,4 @@ target_sources(${PROJECT_NAME} PRIVATE DisassembleSingleword.cpp)
 target_sources(${PROJECT_NAME} PRIVATE AssemblerLabels.cpp)
 target_sources(${PROJECT_NAME} PRIVATE DisassemblerFileWriter.cpp)
 target_sources(${PROJECT_NAME} PRIVATE DisassemblerHexFileParser.cpp)
+

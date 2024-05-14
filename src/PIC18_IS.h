@@ -31,7 +31,7 @@ enum {
 #include <vector>
 #include <string>
 #include <iostream>
-
+#include <cstring>
 
 
 class PIC18F_IS{

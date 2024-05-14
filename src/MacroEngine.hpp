@@ -13,6 +13,7 @@
 #include <vector>
 #include <sstream>
 #include <iostream>
+#include <cstring>
 #include "BasicFileEditing.hpp"
 typedef struct{
                                     // #define SUM(x,y) x=x+y

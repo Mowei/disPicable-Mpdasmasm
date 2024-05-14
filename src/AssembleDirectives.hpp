@@ -13,6 +13,7 @@
 #include "BasicFileEditing.hpp"
 #include "AssemblerAddressAndChecksum.hpp"
 #include "PIC18_IS.h"
+#include <cstring>
 
 void processDirective(std::string Assembly_Instruction,
                       Address_And_Checksum_t &Address,

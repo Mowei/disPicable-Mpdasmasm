@@ -6,7 +6,6 @@
 //
 
 #include "ArgumentParser.hpp"
-#include <cstring>
 
 extern char Global_working_directory[FILENAME_MAX];
 

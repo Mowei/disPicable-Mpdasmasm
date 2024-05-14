@@ -13,6 +13,7 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <cstring>
 
 std::string remove_tabs(std::string next_line);
 char* delete_all_the_stupid_carriage_returns(const char *input_file);
