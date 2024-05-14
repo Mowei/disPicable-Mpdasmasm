@@ -59,3 +59,13 @@ jobs:
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
       run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }}
 
+    - name: Create release Linux x86_64
+      uses: ncipollo/release-action@v1
+      with:
+        name: Decompyle++ ${{ env.RELEASE_DATE }}
+        tag: build-${{ env.RELEASE_DATE }}-${{ env.RELEASE_COMMIT }}
+        body: Compiled on ${{ env.RELEASE_DATE }} at ${{ env.RELEASE_TIME }} GMT, disPicable commit ${{ env.RELEASE_COMMIT }}
+        artifacts: "src/disPicable"
+        token: ${{ secrets.GITHUB_TOKEN }}
+        allowUpdates: true
+        draft: true
